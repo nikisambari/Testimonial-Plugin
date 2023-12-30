@@ -1,0 +1,142 @@
+.gallery2-outerdiv
+{
+	width: 100%;
+   
+}
+.gallery2-innerdiv
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:20px;
+    padding:10px;
+    margin:0;
+
+}
+
+.gallery2-innerdiv .testimonial-eachdiv-2 {
+    border-radius: 0.8rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding:40px;
+    
+}
+.gallery2-innerdiv .testimonial-eachdiv-2:nth-child(even){
+flex-direction: row-reverse;
+}
+
+.testimonial-eachdiv-2 .gallery-2-imgbox{
+   
+    width: 9rem;
+	height: 9rem;
+	flex-shrink: 0;
+	margin-right: 1rem;
+    position: relative;
+
+}
+ .gallery-2-imgbox .profile-img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position:top;  
+    border-radius: 15px;
+   
+}
+
+
+.gallery-2-imgbox .shadow-image{
+
+    position:absolute;
+    left:0px;
+    top:30px;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position:top;  
+    border-radius: 15px;
+    z-index: -1;
+    filter: blur(20px);
+
+
+}
+.gallery2-outerdiv .testimonial-eachdiv-2 .gallery-2-testimonial-details{
+    flex:1;
+}
+
+
+.gallery-2-testimonial-details h3{
+    font-family:'Bungee';
+    font-size: 6rem;
+    line-height:10pt !important;
+    margin:0;
+    color:#8785F2;
+    margin-top: 40px;
+}
+.gallery-2-review p{
+  
+    margin-left: 1.4rem;
+    padding-left: 1rem;
+    border-left: 4px solid  #8785F2;
+    font-size: 1.2rem;
+    font-weight: 500;
+    
+}
+.gallery-2-review .star-rating{
+    margin-left: 1.4rem;
+}
+
+.gallery-2-detbox p{
+    margin:0;
+    margin-left: 1.4rem;
+line-height: 1.4 !important;
+
+}
+.gallery-2-detbox .name
+{
+	color: hsl(0, 0%, 81%);
+    font-size:1rem;
+    margin-bottom: 0.1rem;
+    font-weight: 500;
+
+}
+.gallery-2-detbox .designation
+{
+	opacity: 80%;
+    font-size:.9rem;
+    margin-bottom: 0.1rem;
+
+}
+.gallery-2-testimonial-details .gallery-2-social-media-handles{
+    margin-left: 1.4rem;
+
+}
+.gallery-2-testimonial-details .gallery-2-social-media-handles a{
+    text-decoration: none;
+   
+}
+.gallery-2-testimonial-details .gallery-2-social-media-handles a i{
+font-size: 1.2rem;}
+
+
+
+
+@media only screen and (max-width: 900px)
+{
+.gallery2-innerdiv .testimonial-eachdiv-2,.gallery2-innerdiv .testimonial-eachdiv-2:nth-child(even){
+    flex-direction:column;
+    text-align: justify;
+}
+.gallery2-innerdiv p{
+    text-align: justify;
+}
+.gallery2-innerdiv{
+    padding:0;
+}
+.gallery2-innerdiv .testimonial-eachdiv-2 {
+    padding:20px;
+}
+}

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Abril Fatface');
+  
+
+.main-div{
+    width: 100%;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins';
+
+}
+
+.review-form{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:30px;
+    width:60%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.textbox,.textbox-upload{
+        background: rgba(228, 228, 228, 0.42);
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 10px;
+  
+}
+.textbox textarea{
+    resize: none;
+}
+.textbox input[type=text],.textbox textarea{
+    border: none;
+    border-style: none;
+    border-width: 0px;
+    padding:15px;
+    outline: none;
+    background-color:transparent;
+
+}
+.textbox input:focus,textarea:focus{
+    outline: none;
+}
+ .textbox-upload  input::file-selector-button {
+    display:none;
+  } 
+  .textbox-upload .upload{
+    padding:15px;
+    background-color: #8785F2;
+    color:#ffffff;
+    border-radius: 10px;
+    cursor:pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition:all 5s;
+   
+}
+  .textbox-upload{
+    padding:20px;
+  }
+  .textbox-upload .upload:hover{
+    box-shadow: inset rgba(0, 0, 0, 0.4) 0px 2px 4px;
+    
+  }
+.review-form input[type=submit]{
+    margin-top: 20px;
+    background-color: #8785F2;
+    border: none;
+    outline:none;
+    border-radius:10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding:20px 50px;
+    width: 100%;
+    font-weight: 900;
+    color:#ffffff;
+    
+
+}
+.review-form input[type=submit]:hover{
+    box-shadow: inset rgba(0, 0, 0, 0.4) 0px 4px 4px;
+    background: #8785F2;
+}
+
+
+/* ******************* Ratings *********************************/
+
+.review-form .rating_stars {
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 200;
+    color: #918f8f;
+    position: relative;
+}
+
+.rating_stars span .fa, .rating_stars span.active-low .fa-star-o, .rating_stars span.active-high .fa-star-o{
+	display: none;
+}
+
+.rating_stars span .fa-star-o{
+	display: inline-block;
+}
+
+.rating_stars span.s.active-high .fa-star{
+	display: inline-block; color: #feb645;
+}
+
+.rating_stars span.s.active-low .fa-star-half-o{
+	display: inline-block; color: #feb645;
+}
+
+.rating_stars span.r {
+	position: absolute;
+	top: 0;
+	height: 20px;
+	width: 10px;
+	left: 0;
+}
+
+.rating_stars span.r.r0_5 {left:0px;}
+.rating_stars span.r.r1 {left:10px; width: 11px;}
+.rating_stars span.r.r1_5 {left:21px; width: 13px;}
+.rating_stars span.r.r2 {left:34px; width: 12px;}
+.rating_stars span.r.r2_5 {left:46px; width: 12px;}
+.rating_stars span.r.r3 {left:58px; width: 11px;}
+.rating_stars span.r.r3_5 {left:69px; width: 12px;}
+.rating_stars span.r.r4 {left:81px; width: 12px;}
+.rating_stars span.r.r4_5 {left:93px; width: 12px;}
+.rating_stars span.r.r5 {left:105px; width: 12px;}
+
+
+/**************************************************************/
+
+@media only screen and (max-width: 800px) {
+    .review-form{
+        width: 100%;
+    }
+}

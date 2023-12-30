@@ -1,0 +1,182 @@
+.gallery-outerdiv
+{
+    width: 100%;
+    max-width: 100%; /* Set a maximum width if necessary */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.gallery-innerdiv
+{
+    transform: scale(0.9);
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 17rem);
+}
+.gallery-innerdiv .testimonial-eachdiv
+{ 
+	padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 5px 5px 20px #6d6b6b6b;
+    color: white;
+	display: flex; 
+	flex-direction: column; 
+	justify-content: space-between; 
+    overflow: hidden
+}
+.gallery-testimonial-1
+{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.gallery-testimonial-2
+{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.gallery-testimonial-3
+{
+    grid-column: 4/5;
+    grid-row: 1/3;
+  
+}
+.gallery-testimonial-4
+{
+	grid-column: 1/2;
+    grid-row: 2/3;
+
+}
+.gallery-testimonial-5
+{
+	grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+
+
+
+
+.userdetails
+{
+	display: flex;
+	width:100%;
+}
+.imgbox
+
+{   width: 3rem;
+	height: 3rem;
+	flex-shrink: 0;
+	margin-right: 1rem;
+}
+.imgbox img
+{
+	border-radius: 50%;
+	width:100%;
+	height:100%;
+	border: 2px solid #cec5c5;
+	object-fit: cover;
+}
+.detbox
+{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.detbox p
+{
+	margin: 0;
+}
+.detbox .name
+{
+	color: hsl(0, 0%, 81%);
+    font-size:1.2rem;
+    margin-bottom: 0.1rem;
+    font-weight: 600;
+}
+
+.detbox .designation
+{
+	color: hsl(0, 0%, 81%);
+    opacity: 70%;
+    font-size: 1rem;
+}
+.review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:10px;
+    flex:1;
+
+}
+.review p
+{
+	font-size: 0.95rem;
+    color: #F3DEFF;
+    font-weight: 500;
+    line-height: 1.5 !important; 
+	text-align: center;
+}
+
+
+
+
+
+.review.dark p{
+	color: #0e0e0e;
+}
+  .social-media-handles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.testimonial-eachdiv  .social-media-handles a{
+    width:40px;
+    height:40px;
+    display:block;
+    text-align:center;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration:none;
+    background: #fff;
+    transition: .5s;
+    color:#8785F2;
+}
+ .social-media-handles a :hover{
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+.social-media-handles a .fab{
+    width: 100%;
+    height:100%;
+    display:block;
+    background: #ddd;
+    border-radius: 50%;
+    line-height: calc(40px - 12px) !important;
+    font-size:1rem;
+    transition: .5s;
+}
+
+@media only screen and (max-width: 1100px)
+{
+	.gallery-innerdiv
+	{
+		transform: scale(0.7);
+	}
+}
+@media only screen and (max-width: 900px)
+{
+   
+	.gallery-innerdiv
+	{
+		display: flex; 
+		flex-direction: column;
+		transform: scale(1);
+		margin: 2rem;
+		margin-bottom: 5rem;
+	}
+}

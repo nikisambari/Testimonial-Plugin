@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+@import url('https://fonts.googleapis.com/css?family=Abril Fatface');
+.heading{
+    margin-bottom: 40px;
+    padding:10px;
+}
+.heading h1{
+    font-family:Abril Fatface;
+    font-family: 900;
+    font-size: 3rem;
+    text-align: center;
+}
+.testimonial-page{
+    width: 100%;
+    padding: 40px;
+    display: flex;
+ overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    
+   
+}
+
+.testimonial-page .swiper-slide{
+  height:100%;
+}
+
+.testimonial-page .swiper-slide .testimonial{
+      
+    height: 100%;
+    border-radius: 20px;
+    flex-grow: 1; 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; 
+    align-items: center;
+    position: relative;
+    box-shadow: 5px 5px 20px #6d6b6b6b;
+ 
+}
+
+ .testimonial .testimonial-box{
+    /* background-color: #323250; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding:20px;
+}
+.testimonial  .t-image{
+    position:absolute;
+    top:-30px;
+    right:50px;
+    border-radius: 50%;
+}
+.testimonial  .t-image img{
+border-radius: 50%;
+width:100px;
+height:100px;
+object-fit: cover;
+border: 10px solid #F1F1F7;
+}
+
+ .testimonial .testimonial-box  h1{
+    font-family:'Bungee';
+    font-size: 6rem;
+    line-height:10pt;
+
+    color:#8785F2;
+    margin-top: 40px;
+    
+
+
+}
+ .testimonial .testimonial-box  .testimonial-content{
+    width:100%;
+}
+.testimonial .testimonial-box  .testimonial-content .content{
+
+    text-align: center;
+    font-size: .8rem;
+    /* font-family: Poppins; */
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    color:#323250;
+}
+.testimonial .testimonial-box   .username{
+    text-align: right;
+    /* font-family: Poppins; */
+    font-size: 1rem;
+    text-align: right;
+    font-weight:900;
+    color:#323250;
+}
+.testimonial .testimonial-box   .username .testi-designation{
+    font-weight:400;
+    font-size: .8rem;
+}
+.testimonial  .social-media-handles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    flex-wrap: wrap;
+    position:absolute;
+    bottom:-20px;
+}
+.testimonial  .social-media-handles a{
+    width:40px;
+    height:40px;
+    display:block;
+    text-align:center;
+    /* margin:0 10px; */
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration:none;
+    background: #fff;
+    transition: .5s;
+    color:#8785F2;
+}
+.testimonial  .social-media-handles a :hover{
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+.testimonial .social-media-handles a .fab{
+    width: 100%;
+    height:100%;
+    display:block;
+    background: #ddd;
+    border-radius: 50%;
+    line-height: calc(40px - 12px);
+    font-size:1rem;
+    transition: .5s;
+}
+.testimonial-page{
+    position: relative;
+}
+.testimonial-page  .nav-btn {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transform: translateY(30px);
+    background-color: #f2f2f2;
+    transition: 0.2s;
+
+}
+
+ .testimonial-page  .nav-btn::after,
+ .testimonial-page  .nav-btn::before {
+    font-size: 20px;
+    font-weight: 700;
+    color:#aeaeae;
+    }
+
+.testimonial-page   .swiper-pagination-bullet {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+.testimonial-page   .swiper-pagination-bullet-active {
+    background-color: #4070f4;
+  }
+
+
+  .testimonial-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+  }
+
+  
+  .hidden {
+    display: none !important;
+  }
+@media only screen and (max-width: 720px) {
+ .testimonial-page{
+        margin-top:30px;
+        padding:40px;
+        /* padding-top:10%; */
+        
+
+}
+.testimonial .testimonial-box  .testimonial-content{
+    padding:10px;
+}
+.heading h1{
+    font-size: 2rem;
+}
+/* .testimonial-page  .nav-btn {
+    display: none;
+} */
+
+}
+
